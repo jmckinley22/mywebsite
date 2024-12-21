@@ -25,7 +25,7 @@ header {
 .name-banner h1 {
   margin: 0;
   font-size: 24px;
-  color: #42c3d2;
+  color: #ffffff;
 }
 
 header nav {
@@ -46,7 +46,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: rgb(43, 163, 41);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
 }
@@ -64,9 +64,10 @@ main {
 section {
   margin: 50px 0;
   padding: 20px;
-  border: 1px solid #dba8a8;
-  background-color: #2c56e1;
+  border: 1px solid #ffffff;
+  background-color: #9d9d9d;
   text-align: center;
+  border-radius: 8px;
 }
 
 .content {
