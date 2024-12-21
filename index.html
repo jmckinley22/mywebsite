@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website with React</title>
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Page with TOC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-
-  <!-- React root element -->
-  <div id="react-root"></div>
-
-  <script src="app.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <h1>Section 1</h1>
+            <p>Content for section 1...</p>
+        </section>
+        <section id="section2">
+            <h1>Section 2</h1>
+            <p>Content for section 2...</p>
+        </section>
+        <section id="section3">
+            <h1>Section 3</h1>
+            <p>Content for section 3...</p>
+        </section>
+        <section id="section4">
+            <h1>Section 4</h1>
+            <p>Content for section 4...</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
