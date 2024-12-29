@@ -2,6 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
 
 .name-banner h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 30px;
   color: #ffffff;
 }
 
@@ -66,6 +67,7 @@ section {
   background-color: #9d9d9d;
   text-align: center;
   border-radius: 8px;
+  scroll-margin-top: 120px;
 }
 
 .content {
@@ -96,4 +98,64 @@ section img {
   max-width: 100%;
   height: auto;
   border: 1px solid #5a2a2a;
+}
+
+#sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 2000;
+  padding-top: 60px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  padding: 10px 20px;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+#sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 2001;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
