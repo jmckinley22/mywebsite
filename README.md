@@ -1,3 +1,4 @@
-# mywebsite
+# Jackson McKinley Personal Website
 
-using generative ai to create a personal website
+Some information about me and my involvements
+Work, Sailing, Projects, Contacts
