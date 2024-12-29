@@ -8,3 +8,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Sidebar toggle functionality
+document.getElementById('sidebar-toggle').addEventListener('click', () => {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('open');
+});
+
+// Sidebar close functionality
+document.getElementById('sidebar-close').addEventListener('click', () => {
+    sidebar.classList.remove('open');
+});
